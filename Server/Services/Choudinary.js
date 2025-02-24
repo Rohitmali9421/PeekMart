@@ -14,7 +14,7 @@ async function uploadOnCloudinary(localFilePath) {
 
     const response = await cloudinary.uploader.upload(localFilePath, {
       resource_type: "auto",
-      folder: "Ecommerce-MERN"
+      folder: "PeekMart"
     });
     fs.unlinkSync(localFilePath);
     return {
