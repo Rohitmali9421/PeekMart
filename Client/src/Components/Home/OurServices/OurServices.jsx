@@ -29,8 +29,8 @@ const categories = [
 
 function OurServices() {
   return (
-    <section className="bg-white py-16 md:py-20 lg:py-24">
-      <div className="px-4 md:px-10 lg:px-16">
+    <section className="bg-white py-12 md:py-14 lg:py-16">
+      <div className="px-8 md:px-10 lg:px-16">
         <div className="grid md:grid-cols-2 gap-6 lg:gap-8 mx-auto max-w-6xl">
           <div className="row-span-2 relative">
             <img
@@ -38,9 +38,9 @@ function OurServices() {
               alt="category"
               className="h-full w-full object-cover rounded-lg shadow-lg"
             />
-            <div className="absolute left-0 top-0 h-full w-full bg-black/30 px-6 py-8 sm:px-10 flex items-end rounded-lg">
+            <div className="absolute left-0 top-0 h-full w-full  px-6 py-8 sm:px-10 flex items-start rounded-lg">
               <div className="max-w-[400px]">
-                <span className="mb-2 block text-sm font-medium text-white">
+                <span className="mb-2 block text-sm font-medium text-blue">
                   {categories[0].label}
                 </span>
                 <a
@@ -59,7 +59,7 @@ function OurServices() {
                 alt="category"
                 className="h-full w-full object-cover rounded-lg shadow-lg"
               />
-              <div className="absolute left-0 top-0 h-full w-full bg-black/30 px-6 py-8 sm:px-10 flex items-end rounded-lg">
+              <div className="absolute left-0 top-0 h-full w-full bg-black/30 px-6 py-8 sm:px-10 flex items-start rounded-lg">
                 <div className="max-w-[400px]">
                   <span className="mb-2 block text-sm font-medium text-white">
                     {category.label}
