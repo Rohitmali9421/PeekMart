@@ -1,5 +1,6 @@
 const Category = require("../Models/Category");
 const Product = require("../Models/Product");
+const { uploadOnCloudinary } = require("../Services/Choudinary");
 async function handleGetCategory(req, res) {
   try {
     const category = await Category.find();
@@ -11,7 +12,7 @@ async function handleGetCategory(req, res) {
 async function handleCreateCategory(req, res) {
   try {
     const { name, imagePath } = req.body;
-    if (!image) return res.status(400).json({ msg: "Image not uploaded" });
+    if (!imagePath) return res.status(400).json({ msg: "Image not uploaded" });
     const category = await Category.findOne({ name });
     if (category)
       return res.status(400).json({ msg: "Category Already Exists" });
